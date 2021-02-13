@@ -2,10 +2,10 @@ html,body{
 	height: 100%;
 }
 .cyes{
-	display: none;
+	display: none !important;
 }
 .cno{
-	display: none;
+	display: none !important;
 }
 body{
 	background-color: black;
