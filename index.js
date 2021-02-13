@@ -86,6 +86,8 @@ function checkCookie() {
 	document.getElementById('sad').style.transform = "translateX(-160%)";
 	document.getElementById('sad').style.opacity = "1";
 	document.getElementById('hap').style.opacity = "0";
+	document.getElementById('no').style.opacity = "1";
+	document.getElementById('no').currentTime = 0;
   }
 
 }
