@@ -63,14 +63,29 @@ function checkCookie() {
   if (user == "yes") {
   	var no = document.getElementsByClassName('no');
   	for (var i = 0; i < no.length; i++) {
-  		no[i].className = "cno"
+  		no[i].className = "cno";
   	}
+  	document.getElementById('yes').style.opacity = "1";
+	document.getElementById('yes').currentTime = 0;
+	var quote = document.querySelectorAll('#quote div');
+	for (var i = 0; i < quote.length; i++) {
+		quote[i].style.color = "transparent";
+		quote[i].style.transition = "1s";
+	}
   } 
   if (user == "no") {
   	var yes = document.getElementsByClassName('yes');
   	for (var i = 0; i < yes.length; i++) {
-  		yes[i].className = "cyes"
+  		yes[i].className = "cyes";
   	}
+  	var quote = document.querySelectorAll('#quote div');
+	for (var i = 0; i < quote.length; i++) {
+		quote[i].style.color = "black";
+		quote[i].style.transition = "1s";
+	}
+	document.getElementById('sad').style.transform = "translateX(-160%)";
+	document.getElementById('sad').style.opacity = "1";
+	document.getElementById('hap').style.opacity = "0";
   }
 
 }
