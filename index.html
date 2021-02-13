@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>VD</title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<script type="text/javascript" src="index.js"></script>
+</head>
+<body onload="checkCookie()">
+	<header class="yes no">
+		
+	</header>
+	<div id="quote">
+		<div style="--i:0">
+			<p id="hap" class="yes">HAPPY</p><p class="no" id="sad">SAD</p>
+		</div>
+		<div style="--i:0.2">
+			VALENTINE'S
+		</div>
+		<div style="--i:0.4">
+			DAY
+		</div>
+	</div>
+	<div class="yes no" id="question" onmouseover="trans(this)">
+		<div id="up">
+			
+		</div>
+		<p>WILL YOU BE MY VALENTINE?</p>
+		<div id="yep" onmousedown="yep(this)">
+			YEP
+		</div>
+		<div id="nope" onmousedown="nope(this)">
+			NOPE
+		</div>
+		<div id="down">
+			
+		</div>
+	</div>
+<video autoplay muted loop id="yes" class="yes">
+  <source src="yes.mp4" type="video/mp4">
+</video>
+<video autoplay id="no" class="no">
+  <source src="no.mp4" type="video/mp4">
+</video>
+<footer class="yes no">
+	
+</footer>
+</body>
+</html>
