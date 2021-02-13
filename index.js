@@ -32,7 +32,7 @@ function nope(el){
 	document.getElementsByTagName('footer')[0].style.height = "0%";
 	document.getElementById('no').style.opacity = "1";
 	document.getElementById('no').currentTime = 0;
-	setCookie("question","no",2);
+	setCookie("question","no",1);
 }
 
 
